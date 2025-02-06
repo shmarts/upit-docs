@@ -3,4 +3,5 @@ nav:
     What is Upit?: index.md
     Getting started: getting-started.md
   Plugins:
+    What are plugins?: plugins/index.md
     FaceKit: plugins/facekit.md
