@@ -1,6 +1,6 @@
 nav:
-  - Intro: 
-    - What is Upit?: index.md
-    - Getting started: getting-started.md
-  - Plugins:
-    - FaceKit: plugins/facekit.md
+  Intro: 
+    What is Upit?: index.md
+    Getting started: getting-started.md
+  Plugins:
+    FaceKit: plugins/facekit.md
