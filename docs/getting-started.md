@@ -1,10 +1,8 @@
 Bun treats TypeScript as a first-class citizen.
 
-{% callout %}
-
+<Callout>
 **Note** — To add type declarations for Bun APIs like the `Bun` global, follow the instructions at [Intro > TypeScript](https://bun.sh/docs/typescript). This page describes how the Bun runtime runs TypeScript code.
-
-{% /callout %}
+</Callout>
 
 ## Running `.ts` files
 
