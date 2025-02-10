@@ -36,7 +36,7 @@ import { Button } from "components/Button.tsx";
 Bun will also correctly resolve imports from `"data"`.
 
 
-```ts#index.ts
+```ts
 import { foo } from "data";
 console.log(foo); // => "Hello world!"
 ```
@@ -45,7 +45,7 @@ console.log(foo); // => "Hello world!"
 
 Bun supports the pre-TypeScript 5.0 experimental decorators syntax.
 
-```ts#hello.ts
+```ts
 // Simple logging decorator
 function log(target: any, propertyKey: string, descriptor: PropertyDescriptor) {
   const originalMethod = descriptor.value;
@@ -70,7 +70,7 @@ example.greet("world"); // Logs: "Calling greet with: ['world']"
 
 To enable it, add `"experimentalDecorators": true` to your `tsconfig.json`:
 
-```jsonc#tsconfig.json
+```jsonc
 {
   "compilerOptions": {
     // ... rest of your config
@@ -85,7 +85,7 @@ We generally don't recommend using this in new codebases, but plenty of existing
 
 Bun supports `emitDecoratorMetadata` in your `tsconfig.json`. This enables emitting design-time type metadata for decorated declarations in source files.
 
-```ts#emit-decorator-metadata.ts
+```ts
 import "reflect-metadata";
 
 class User {
@@ -110,7 +110,7 @@ const container = new UserService(new User());
 
 To enable it, add `"emitDecoratorMetadata": true` to your `tsconfig.json`:
 
-```jsonc#tsconfig.json
+```jsonc
 {
   "compilerOptions": {
     // ... rest of your config
