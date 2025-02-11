@@ -110,12 +110,14 @@ const container = new UserService(new User());
 
 To enable it, add `"emitDecoratorMetadata": true` to your `tsconfig.json`:
 
-```jsonc
+```diff
 {
   "compilerOptions": {
     // ... rest of your config
-    "experimentalDecorators": true,
-    "emitDecoratorMetadata": true,
+-   "experimentalDecorators": true,
+-   "emitDecoratorMetadata": true,
++   "experimentalDecorators": true,
++   "emitDecoratorMetadata": true,
   },
 }
 ```
